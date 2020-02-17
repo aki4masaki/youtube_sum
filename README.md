@@ -45,7 +45,7 @@ Download and put under directory `checkpoint/en` or `checkpoint/jp`
 
 ### Example
 
-please check youtube_youyaku.ipynb
+please check [youtube_youyaku.ipynb](https://github.com/aki4masaki/youtube_sum/blob/master/youtube_youyaku.ipynb)
 
 #### Note
 
