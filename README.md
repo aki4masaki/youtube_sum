@@ -5,6 +5,7 @@
 ### Introduction
 
 This is youtube summarization (speech to text) tweeting machine.
+
 これは youtube の内容を要約した動画紹介テキストを Twitter で Tweet するコードです。
 
 using [youtube-dl](https://github.com/ytdl-org/youtube-dl/tree/067aa17edf5a46a8cbc4d6b90864eddf051fa2bc) as Download model.
@@ -44,9 +45,7 @@ Download and put under directory `checkpoint/en` or `checkpoint/jp`
 
 ### Example
 
-```
 please check youtube_youyaku.ipynb
-```
 
 #### Note
 
