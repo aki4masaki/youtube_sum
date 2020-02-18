@@ -4,13 +4,23 @@
 
 ### Introduction
 
-This is youtube summarization (speech to text) tweeting machine.
+This is youtube summarization (speech to text) tweeting machine.\n
+For Google colab.\n
+Japanese version. If you need English ver, you can change lang at [YouyakuMan](https://github.com/neilctwu/YouyakuMan). 
 
-これは youtube の内容を要約した動画紹介テキストを Twitter で Tweet するコードです。
+```
+-lang en
+```
 
 using [youtube-dl](https://github.com/ytdl-org/youtube-dl/tree/067aa17edf5a46a8cbc4d6b90864eddf051fa2bc) as Download model.
 using IBM Watson as speech to text model.
 using [YouyakuMan](https://github.com/neilctwu/YouyakuMan) as summatization model, extract top N important sentences.
+
+
+これは youtube の内容を要約した動画紹介テキストを Twitter で Tweet するコードです。\n
+Google colab 上で動かすことを想定し、デバッグも Google colab 上で行っています。\n
+日本語ver。[YouyakuMan](https://github.com/neilctwu/YouyakuMan)部分で言語を指定すれば英語verに切り替え可能です。
+
 
 ---
 ### Prerequisites (from YouyakuMan)
