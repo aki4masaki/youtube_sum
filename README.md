@@ -4,9 +4,10 @@
 
 ### Introduction
 
-This is youtube summarization (speech to text) tweeting machine.\n
-For Google colab.\n
-Japanese version. If you need English ver, you can change lang at [YouyakuMan](https://github.com/neilctwu/YouyakuMan). 
+This is youtube summarization (speech to text) tweeting machine.
+For Google colab.
+
+Japanese version. If you need English ver, you can change lang at [YouyakuMan](https://github.com/neilctwu/YouyakuMan).
 
 ```
 -lang en
@@ -17,8 +18,9 @@ using IBM Watson as speech to text model.
 using [YouyakuMan](https://github.com/neilctwu/YouyakuMan) as summatization model, extract top N important sentences.
 
 
-これは youtube の内容を要約した動画紹介テキストを Twitter で Tweet するコードです。\n
-Google colab 上で動かすことを想定し、デバッグも Google colab 上で行っています。\n
+これは youtube の内容を要約した動画紹介テキストを Twitter で Tweet するコードです。
+Google colab 上で動かすことを想定し、デバッグも Google colab 上で行っています。
+
 日本語ver。[YouyakuMan](https://github.com/neilctwu/YouyakuMan)部分で言語を指定すれば英語verに切り替え可能です。
 
 
