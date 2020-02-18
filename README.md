@@ -14,7 +14,9 @@ Japanese version. If you need English ver, you can change lang at [YouyakuMan](h
 ```
 
 using [youtube-dl](https://github.com/ytdl-org/youtube-dl/tree/067aa17edf5a46a8cbc4d6b90864eddf051fa2bc) as Download model.
+
 using IBM Watson as speech to text model.
+
 using [YouyakuMan](https://github.com/neilctwu/YouyakuMan) as summatization model, extract top N important sentences.
 
 
