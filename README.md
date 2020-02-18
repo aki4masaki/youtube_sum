@@ -43,7 +43,7 @@ Download and put under directory `checkpoint/en` or `checkpoint/jp`
 
 ---
 
-### Example
+### How to use Example
 
 please check [youtube_youyaku.ipynb](https://github.com/aki4masaki/youtube_sum/blob/master/youtube_youyaku.ipynb)
 
