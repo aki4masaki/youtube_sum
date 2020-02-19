@@ -12,7 +12,7 @@ config.read('./config.ini')
 
 class JumanTokenizer:
     def __init__(self):
-        print("welcome to JumanTokenizer")
+        # print("welcome to JumanTokenizer")
         # print("remove from Juman(): command=jumanpp,option= --model= jumanpp/model/jumandic.jppmdl --config = jumanpp/model/jumandic.conf.in")
         self.juman = Juman()
         # print("self.juman",self.juman)
@@ -28,10 +28,10 @@ class LangFactory:
         self.lang = lang
         self.stat = 'valid'
         if self.lang not in self.support_lang:
-            print('Language not supported, will activate Translation.')
+            # print('Language not supported, will activate Translation.')
             self.stat = 'Invalid'
         self._toolchooser()
-        print("self.toolkit",self.toolkit)
+        # print("self.toolkit",self.toolkit)
 
     def _toolchooser(self):
         if self.lang == 'jp':
@@ -45,7 +45,7 @@ class LangFactory:
 class JapaneseWorker:
     def __init__(self):
         self.juman_tokenizer = JumanTokenizer()
-        print("JapaneseWorker started at Langfac")
+        # print("JapaneseWorker started at Langfac")
 
 
         # config = BertConfig.from_json_file('checkpoint/jp/bert_config.json')
@@ -59,7 +59,7 @@ class JapaneseWorker:
                                             do_lower_case=False, do_basic_tokenize=False)
         self.cls_id = self.bert_tokenizer.vocab['[CLS]']
         self.mask_id = self.bert_tokenizer.vocab['[MASK]']
-        print("self.cls_id",self.cls_id)
+        # print("self.cls_id",self.cls_id)
 
         self.bert_model = 'bert-base-uncased' #'PATH_TO_BERTJPN'
 
@@ -104,27 +104,27 @@ class JapaneseWorker:
         def _preprocess_text(text):
             return text.replace(" ", "")  # for Juman
 
-        print("src",src)
-        print(len(src))
+        # print("src",src)
+        # print(len(src))
 
 
         for sentence in src:
 
             preprocessed_text = _preprocess_text(sentence)
-            print("_preprocess_text",preprocessed_text)
+            # print("_preprocess_text",preprocessed_text)
 
             juman_tokens = self.juman_tokenizer(preprocessed_text)
-            print("juman_tokens",juman_tokens)
+            # print("juman_tokens",juman_tokens)
             tokens = self.bert_tokenizer.tokenize(" ".join(juman_tokens))
             tokens = ["[CLS]"] + tokens + ["[SEP]"]
-            print("tokens",tokens)
+            # print("tokens",tokens)
             ids = self.bert_tokenizer.convert_tokens_to_ids(tokens)
             token += tokens
             token_id += ids
-            print("token",token)
-            print("token_id",token_id)
-        print("token",token)
-        print("token_id",token_id)
+        #     print("token",token)
+        #     print("token_id",token_id)
+        # print("token",token)
+        # print("token_id",token_id)
         return token, token_id
 
 
