@@ -19,13 +19,13 @@ class DataLoader:
             self._translate()
         # Outsource suitable line splitter
         self.texts = self.langfac.toolkit.linesplit(self.rawtexts)
-        print("DataLoader;text linesplited: rm_blank(src)+ rm_newline+ rm_unknown(src) -preprocessed",self.texts)
+        # print("DataLoader;text linesplited: rm_blank(src)+ rm_newline+ rm_unknown(src) -preprocessed",self.texts)
         # Outsource suitable tokenizer
         # print("self.langfac.toolkit.tokenizer",self.langfac.toolkit.tokenizer((self.texts))
         self.token, self.token_id = self.langfac.toolkit.tokenizer(self.texts)
-        print("self.token",self.token)
+        # print("self.token",self.token)
         self._generate_results()
-        print("self._generate_results finnished")
+        # print("self._generate_results finnished")
 
     def _generate_results(self):
 
